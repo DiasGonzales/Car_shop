@@ -75,6 +75,9 @@ TEMPLATES = [
 WSGI_APPLICATION = 'config.wsgi.application'
 
 
+# говороим используй модель юзер в качестве пользователя (аутифентификатор)
+AUTH_USER_MODEL = "account.User"
+
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
@@ -83,7 +86,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME':  'car_shop_db',
         'USER': 'user_car_shop',
-        'PASSWORD': '9900',
+        'PASSWORD': '661067',
         'HOST': '127.0.0.1',
         'PORT': '5432'
     }
